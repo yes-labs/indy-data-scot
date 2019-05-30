@@ -1,0 +1,5 @@
+-r _base.txt
+
+black
+flake8
+isort

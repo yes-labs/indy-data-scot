@@ -1,0 +1,7 @@
+*.pyc
+.idea/
+_build/
+*.egg-info/
+pip-wheel-metadata/
+__pycache__
+.pytest_cache/
