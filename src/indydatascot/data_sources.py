@@ -11,10 +11,15 @@ class SourcePublication:
     reference_url: str  # where to find supplementary information
     description: str
     publish_date: datetime.date
+    license: str
 
 
 class HMRCPublication(SourcePublication):
     org_name = "HM Revenue & Customs"
+    license = (
+        "Contains public sector information licensed under the Open Government Licence "
+        "v3.0. https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    )
 
 
 class IncomeTaxGenderRegionCountry(HMRCPublication):
