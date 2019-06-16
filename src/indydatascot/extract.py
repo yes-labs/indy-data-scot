@@ -3,6 +3,8 @@ import os
 
 import urllib3
 
+# import pandas as pd
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s :: %(levelname)s :: %(message)s")
 logger = logging.getLogger(__name__)
 
@@ -36,3 +38,9 @@ def download_file(source_url: str) -> str:
     else:
         logger.info(f"not downloading file because {destination_path} already exists")
     return destination_path
+
+
+# def extract_df(valid_row) -> pd.DataFrame:
+#     """
+#     given a sheet with a bunch of stuff on it
+#     """
