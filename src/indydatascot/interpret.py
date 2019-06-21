@@ -33,7 +33,7 @@ def identify_section_headers_and_subheaders(
     found_headers = []
     for row_idx in range(0, sheet.nrows):
         coords = (row_idx, col_idx)
-        # print(coords, sheet.cell_value(*coords))
+        print(coords, sheet.cell_value(*coords))
         test_text = sheet.cell_value(*coords)
         if test_text in headings:
             logger.debug("FOUND HEADING", coords, sheet.cell(*coords))
